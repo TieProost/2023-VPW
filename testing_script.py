@@ -1,22 +1,27 @@
 import subprocess
 
 opgave = "2018/cat2/fracking"
+wedstrijd_invoer = opgave + "/wedstrijd.invoer"
+wedstrijd_uitvoer = opgave + "/wedstrijd.uitvoer"
+oplossing_script = opgave + "/oplossing.py"
+oplossing_uitvoer = opgave + "/oplossing.uitvoer"
+
 
 # schrijf oplossing.uitvoer
 
-stdin = open(opgave + "/wedstrijd.invoer", "r")
-stdout = open(opgave + "/oplossing.uitvoer", "a")
+stdin = open(wedstrijd_invoer, "r")
+stdout = open(oplossing_uitvoer, "a")
 stdout.seek(0)
 stdout.truncate()
 
-subprocess.Popen(f"python {opgave}/oplossing.py",
+subprocess.Popen(f"python {oplossing_script}",
                  stdin=stdin, stdout=stdout).communicate()
 
 # bereken punten
 
 juist = totaal = 0
-expected = open(opgave+"/wedstrijd.uitvoer", "r")
-oplossing = open(opgave+"/oplossing.uitvoer", "r")
+expected = open(wedstrijd_uitvoer, "r")
+oplossing = open(oplossing_uitvoer, "r")
 
 for line in expected.readlines():
     if oplossing.readline() == line:
@@ -24,4 +29,4 @@ for line in expected.readlines():
     totaal += 1
 
 percentage = int((juist/totaal)*100)
-print(f"{percentage}% = {150 if percentage == 100 else percentage} punten")
+print(f"\n{percentage}% = {150 if percentage == 100 else percentage} punten\n")
