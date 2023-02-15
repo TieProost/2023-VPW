@@ -1,4 +1,5 @@
 # Vlaamse Programmeer Wedstrijd 2023
+<img src="https://risibank.fr/cache/medias/0/17/1769/176964/full.gif" width="10%" />
 
 ## Voorbereiding python
 Hier zullen we oplossingen posten voor de oefenvragen van de VPW.
