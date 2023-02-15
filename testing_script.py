@@ -1,7 +1,7 @@
 import subprocess
 import sys
 
-opgave = "2018/cat2/fracking" if len(sys.argv) == 1 else sys.argv[1]
+opgave = "2017/cat1/hittegolf" if len(sys.argv) == 1 else sys.argv[1]
 
 wedstrijd_invoer = opgave + "/wedstrijd.invoer"
 wedstrijd_uitvoer = opgave + "/wedstrijd.uitvoer"

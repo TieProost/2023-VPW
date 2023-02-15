@@ -1,8 +1,6 @@
 def hittegolf(testgeval):
-
     reeks25 = 0
     reeks30 = 0
-    hittegolf = False
 
     for i, temp in enumerate(testgeval):
 
@@ -13,19 +11,12 @@ def hittegolf(testgeval):
                 reeks30 += 1
 
         else:
-            if hittegolf == True:
-                return f"{start_index+1} {lengte}"
+            if reeks25 >= 5 and reeks30 >= 3:
+                start = i + 1 - reeks25
+                return f"{start} {i + 1 - start}"  # hittegolf
 
             reeks25 = 0
             reeks30 = 0
-
-        if reeks25 >= 5 and reeks30 >= 3:
-            hittegolf = True
-            start_index = i + 1 - reeks25
-            lengte = i + 1 - start_index
-
-    if hittegolf == True:  # deze if wordt niet bereikt met de gegeven test invoer
-        return f"{start_index+1} {lengte}"
 
     return "geen hittegolf"
 
