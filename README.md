@@ -1,3 +1,4 @@
+<img src="https://risibank.fr/cache/medias/0/17/1769/176964/full.gif" width="10%" />
 # Vlaamse Programmeer Wedstrijd 2023
 
 ## Voorbereiding python
