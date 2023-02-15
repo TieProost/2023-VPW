@@ -11,11 +11,13 @@ def min_rekken(boeken, rekken):
         return "ONMOGELIJK"
 
     i_rek = 0
+
     for boek in boeken:
-        while i_rek < len(rekken) - 1 and int(rekken[i_rek]) < int(boek.split(',')[1]):
+        breedte = int(boek.split(',')[1])
+        while i_rek < len(rekken) - 1 and int(rekken[i_rek]) < breedte:
             i_rek += 1
-        if int(rekken[i_rek]) >= int(boek.split(',')[1]):
-            rekken[i_rek] = rekken[i_rek] - int(boek.split(',')[1])
+        if int(rekken[i_rek]) >= breedte:
+            rekken[i_rek] = rekken[i_rek] - breedte
         else:
             return "ONMOGELIJK"
 
