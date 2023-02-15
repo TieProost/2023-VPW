@@ -1,25 +1,32 @@
 def hittegolf(testgeval):
-    if len(testgeval) < 5:
-        return "geen hittegolf"
+
     reeks25 = 0
     reeks30 = 0
     hittegolf = False
+
     for i, temp in enumerate(testgeval):
+
         if temp >= 25.0:
             reeks25 += 1
+
             if temp >= 30.0:
                 reeks30 += 1
+
         else:
             if hittegolf == True:
-                return f"{start+1} {i-start}"
+                return f"{start_index+1} {lengte}"
+
             reeks25 = 0
             reeks30 = 0
 
         if reeks25 >= 5 and reeks30 >= 3:
             hittegolf = True
-            start = i - reeks25 + 1
-    if hittegolf == True:
-        return f"{start} {i}"
+            start_index = i + 1 - reeks25
+            lengte = i + 1 - start_index
+
+    if hittegolf == True:  # deze if wordt niet bereikt met de gegeven test invoer
+        return f"{start_index+1} {lengte}"
+
     return "geen hittegolf"
 
 
@@ -29,4 +36,5 @@ for i in range(int(input())):
     while regel != "stop":
         testgeval += [float(regel)]
         regel = input()
+
     print(i+1, hittegolf(testgeval))
