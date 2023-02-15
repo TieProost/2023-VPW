@@ -9,7 +9,6 @@ wedstrijd_uitvoer = opgave + "/wedstrijd.uitvoer"
 oplossing_script = opgave + "/oplossing.py"
 oplossing_uitvoer = opgave + "/oplossing.uitvoer"
 
-
 # schrijf oplossing.uitvoer
 
 stdin = open(wedstrijd_invoer, "r")
@@ -17,6 +16,7 @@ stdout = open(oplossing_uitvoer, "a")
 stdout.seek(0)
 stdout.truncate()
 
+print()
 subprocess.Popen(f"python {oplossing_script}",
                  stdin=stdin, stdout=stdout).communicate()
 
@@ -34,4 +34,4 @@ for i, line in enumerate(expected.readlines()):
 
 percentage = int((juist/(i+1))*100)
 print(f"\n{opgave}")
-print(f"\n{opgave}\n{percentage}% = {150 if percentage == 100 else percentage} punten\n")
+print(f"{percentage}% = {150 if percentage == 100 else percentage} punten\n")
