@@ -5,6 +5,7 @@
 Hier zullen we oplossingen posten voor de oefenvragen van de VPW.
 ### 2017 / cat1
 - [boekenkast](2017/cat1/boekenkast/oplossing.py)
+- [hittegolf](2017/cat1/hittegolf/oplossing.py)
 ## Testen
 
 Om een oplossing te testen, zet je ```oplossing.py``` in de map van de opgave, en run je ```testing_script.py``` met als argument het pad naar de opgave, bvb: ```testing_script.py 2018/cat2/fracking```.
