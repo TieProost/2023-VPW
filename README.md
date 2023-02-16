@@ -1,6 +1,8 @@
 # Vlaamse Programmeer Wedstrijd 2023
 <img src="https://risibank.fr/cache/medias/0/17/1769/176964/full.gif" width="10%" />
 
+[Opgaves repo](https://github.com/vlaamseprogrammeerwedstrijd/opgaves)
+
 ## Oplossingen python
 
 ### 2017 / cat1
