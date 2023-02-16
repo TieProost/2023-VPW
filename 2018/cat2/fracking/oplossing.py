@@ -11,7 +11,7 @@ def gaatInstorten(grond):
         Q = []
         Q.extend(ondersteLaag)
 
-        while len(Q) != 0 and len(bovensteLaag) != 0:
+        while len(Q) != 0:
             v = Q.pop(0)
             closed.add(v)
             for rijKolom in geefBuren(grond,v):
