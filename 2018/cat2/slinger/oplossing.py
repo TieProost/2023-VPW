@@ -1,19 +1,18 @@
 def zoekPatroon(slinger):
-    index = slinger.index("*")
-    i = index
+    begin = huidig = slinger.index("*")
     interval = 0
-    index += 1
+
     dic = {}
     while (3 not in dic.values()):
-        while (index < len(slinger) and slinger[index] != "*"):
-            index += 1
-        interval = index - i
-        if str(interval) in dic.keys():
-            dic[str(interval)] += 1
-        else:
-            dic[str(interval)] = 1
-        i = index
-        index += 1
+
+        huidig += 1
+        while (huidig < len(slinger) and slinger[huidig] != "*"):
+            huidig += 1
+
+        interval = huidig - begin
+        begin = huidig
+
+        dic[interval] = dic[interval] + 1 if interval in dic else 1
 
     return "*" + "."*(interval-1)
 
