@@ -7,6 +7,9 @@
 - [boekenkast](2017/cat1/boekenkast/oplossing.py)
 - [hittegolf](2017/cat1/hittegolf/oplossing.py)
 - [loodramen-generatie](2017/cat1/loodramen-generatie/oplossing.py)
+### 2017 / cat2
+- [ontbrekend-getal](2017/cat2/ontbrekend-getal/oplossing.py)
+- [vijfde-kaart](2017/cat2/vijfde-kaart/oplossing.py)
 ### 2018 / cat2
 - [fracking](2018/cat2/fracking/oplossing.py)
 ## Testen
