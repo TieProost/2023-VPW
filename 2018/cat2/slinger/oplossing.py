@@ -1,6 +1,8 @@
+import math
+
+
 def zoekPatroon(slinger):
     begin = huidig = slinger.index("*")
-    interval = 0
 
     dic = {}
     while (3 not in dic.values()):
@@ -19,18 +21,16 @@ def zoekPatroon(slinger):
 
 def corrigeer(slinger):
     patroon = zoekPatroon(slinger)
-    eersteIndexPatroon = slinger.index(patroon)
+    eersteIndex = slinger.index(patroon)
 
     start = ""
-    if eersteIndexPatroon != 0:
-        start = patroon[len(patroon) - eersteIndexPatroon:]
+    if eersteIndex != 0:
+        start = patroon[len(patroon) - eersteIndex:]
 
-    aantalKeer = (len(slinger) - len(start)) // len(patroon)
+    aantalKeer = math.ceil(len(slinger) / len(patroon))
     res = start + (patroon * aantalKeer)
-    aantalCharactersEinde = len(slinger) - len(res)
-    res += patroon[:aantalCharactersEinde]
 
-    return res
+    return res[:len(slinger)]
 
 
 aantalTestGevallen = int(input())
