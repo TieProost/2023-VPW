@@ -14,6 +14,9 @@
 - [vijfde-kaart](2017/cat2/vijfde-kaart/oplossing.py)
 ### 2018 / cat2
 - [fracking](2018/cat2/fracking/oplossing.py)
+- [overdraft](2018/cat2/overdraft/oplossing.py)
+- [satelliet](2018/cat2/satelliet/oplossing.py)
+- [slinger](2018/cat2/slinger/oplossing.py)
 ## Testen
 
 Om een oplossing te testen, zet je ```oplossing.py``` in de map van de opgave, en run je ```testing_script.py``` met als argument het pad naar de opgave, bvb: ```testing_script.py 2018/cat2/fracking```.
