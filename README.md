@@ -16,8 +16,8 @@
 
 -   [ontbrekend-getal](2017/cat2/ontbrekend-getal/oplossing.py)
 -   [vijfde-kaart](2017/cat2/vijfde-kaart/oplossing.py)
--   [duitse-tanks]-(2017/cat2/duitse-tanks/oplossing.py)
--   [applist]-(2017/cat2/applist/oplossing.py)
+-   [duitse-tanks](2017/cat2/duitse-tanks/oplossing.py)
+-   [applist](2017/cat2/applist/oplossing.py)
 
 ### 2018 / cat2
 
